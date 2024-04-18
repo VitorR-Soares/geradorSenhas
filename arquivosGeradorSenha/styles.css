@@ -1,0 +1,104 @@
+/* Esse singelo projeto apresenta as seguintes funcionalidades:
+1) Gerar senhas aleatórias;
+2) Permite a cópia das senhas geradas para a Área de Transferência (Copia e Cola)
+3) Definir a quantidade de caracteres utilizados na geração da senha */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --neve: #FFFAFB;
+    --azulTiffany: #7de2d1;
+    --verdePersa: #339989;
+    --jet: #2b2c28;
+    --night: #131515;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--jet);
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--verdePersa);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+#feitoPor {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+#titulo {
+    font-size: 75px;
+    margin-left: 20px;
+    color: var(--neve);
+    line-height: 80px;
+}
+#titulo u {
+    font-size: 75px;
+    color: var(--azulTiffany);
+}
+#propriedades {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+}
+#tituloQtd strong {
+    color: var(--jet);
+    font-size: 20px;
+}
+#propriedades input {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--azulTiffany);
+    padding: 5px;
+    font-size: 20px;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+#containerGerador {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#containerGerador #btnGerar {
+    background-color: var(--azulTiffany);
+    border-radius: 100px;
+    width: 200px;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--neve);
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+#containerGerador #gerador {
+    min-width: 400px;
+    max-width: 400px;
+    height: 50px;
+    background-color: var(--neve);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#containerGerador #gerador #copia {
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+}

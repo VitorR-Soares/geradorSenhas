@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha by Vitor Ratolla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="titulo"> Gerador de Senha </br> <strong><u>Aleatória</u></strong> </header>
+
+    <div id="propriedades">
+        <label id="tituloQtd"> ,<strong>Informe a quantidade de caracteres</strong> </label>
+        <input id="qtdCaracteres" type="number" value="0">
+    </div>
+
+    <div id="containerGerador">
+        <button id="btnGerar"> <i class="fa-solid fa-bolt-lightning"></i> Gerar Senha </button>
+        <div id="gerador">
+            <p id="senha">  </p>
+            <button id="copia"> <i class="fa-solid fa-copy"></i> </button>
+        </div>
+    </div>
+
+    <p id="feitoPor"> by Vitor Ratolla </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
